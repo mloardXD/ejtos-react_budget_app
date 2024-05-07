@@ -36,9 +36,9 @@ const App = () => {
                     <div className='col-sm'>
                         <ExpenseList />
                     </div>
-                    <div className='col-sm'>
+                    {/* <div className='col-sm'>
                         <ExpenseItem />
-                    </div>
+                    </div> */}
                 </div>
                 <h3 className='mt-3'>Change allocation</h3>
                 <div className='row mt-3'>
