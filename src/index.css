@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#currencyDropdown{
+    background-color: rgb(84, 172, 255);
+    border-radius: 0.5em;
+    color: white;
+}

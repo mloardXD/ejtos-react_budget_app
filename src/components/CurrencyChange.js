@@ -1,9 +1,9 @@
 
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 
 const CurrencyChange = () => {
-    const { dispatch, currency } = useContext(AppContext);
+    const { dispatch } = useContext(AppContext);
     
     const handleSubmit = (currency) => {
         dispatch({
@@ -13,7 +13,7 @@ const CurrencyChange = () => {
     }
     return (
 <div className='alert alert-secondary'>
-<select className="custom-select" id="inputGroupSelect01" onChange={(event) => handleSubmit(event.target.value)}>
+<select className="custom-select" id="currencyDropdown" onChange={(event) => handleSubmit(event.target.value)}>
     <option hidden defaultValue>Currency (£ Pound)</option>
     <option value="$" name="$ Dollar">$ Dollar</option>
     <option value="£" name="£ Pound">£ Pound</option>
